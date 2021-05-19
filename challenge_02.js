@@ -15,18 +15,18 @@ Alter 13-17 // Cola
 */
 
 /* Getränke-Challenge */
-let firstName, age;
-firstName = prompt("Bitte den Namen eingeben:");
-age = prompt("Bitte das Alter eingeben:");
+
+let firstName = prompt("Bitte den Namen eingeben:");
+let age = parseFloat(prompt("Bitte das Alter eingeben:"));
 
 switch (true) {
-    case (age>=0&&age<=5):
+    case (age>=0 && age<=5):
         console.log(firstName + "ist " + age + "und darf somit Milch trinken");
         break;
-    case (age>=6&&age<=12):
-        console.log(firstName + "ist " + age + "und darf somit Soft trinken");
+    case (age>=6 && age<=12):
+        console.log(firstName + "ist " + age + "und darf somit Saft trinken");
         break;
-    case (age>=13&&age<=17):
+    case (age>=13 && age<=17):
         console.log(firstName + "ist " + age + "und darf somit Cola trinken");
         break;
     case (age>=18):
