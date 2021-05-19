@@ -20,17 +20,17 @@ let firstName = prompt("Bitte den Namen eingeben:");
 let age = parseFloat(prompt("Bitte das Alter eingeben:"));
 
 switch (true) {
-    case (age>=0 && age<=5):
-        console.log(firstName + "ist " + age + "und darf somit Milch trinken");
+    case (age> 0 && age< 5):
+        console.log(firstName + " ist " + age + " und darf somit Milch trinken");
         break;
-    case (age>=6 && age<=12):
-        console.log(firstName + "ist " + age + "und darf somit Saft trinken");
+    case (age> 6 && age< 12):
+        console.log(firstName + " ist " + age + " und darf somit Saft trinken");
         break;
-    case (age>=13 && age<=17):
-        console.log(firstName + "ist " + age + "und darf somit Cola trinken");
+    case (age> 13 && age< 17):
+        console.log(firstName + " ist " + age + " und darf somit Cola trinken");
         break;
-    case (age>=18):
-        console.log(firstName + "ist " + age + "und darf somit Wein trinken");
+    case (age> 18):
+        console.log(firstName + " ist " + age + " und darf somit Wein trinken");
         break;
     default:
         console.log("error");
